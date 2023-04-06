@@ -1,5 +1,11 @@
 const express = require('express');
 
+// mongoose
+// helmet
+// dotenv
+// cors
+// connect to database
+
 const app = express();
 
 app.use((req, res, next) => {
