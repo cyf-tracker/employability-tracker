@@ -35,8 +35,9 @@ exports.signup = (req, res, next) => {
 				email: req.body.email,
 				username: req.body.username,
 				password: hash,
-                // add other parts to this
-				
+				firstname: req.body.firstname,
+				surname: req.body.surname,
+				isVolunteer: req.body.isVolunteer	
 			});
 			user
 				.save()
