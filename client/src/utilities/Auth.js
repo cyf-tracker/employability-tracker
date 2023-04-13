@@ -1,0 +1,1 @@
+//  auth context needs creating for whether user is logged in or not - using json on backend
