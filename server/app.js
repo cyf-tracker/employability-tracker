@@ -3,6 +3,8 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 dotenv.config();
 
+const userRoutes = require('./routes/user')
+
 // connect to database
 const connectToDB = async () => {
 	mongoose.set("strictQuery", false);
@@ -28,5 +30,7 @@ app.use((req, res, next) => {
 	res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, PATCH, OPTIONS");
 	next();
 });
+
+app.use('/api/auth', userRoutes)
 
 module.exports = app;
