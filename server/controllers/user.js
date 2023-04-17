@@ -87,3 +87,18 @@ exports.login = (req, res, next) => {
 			});
 		});
 };
+
+// logout
+
+exports.logout = (req, res, next) =>{
+
+}
+// delete
+
+exports.delete = (req, res, next) => {
+
+}
+//  update
+exports.update = (req, res, next) => {
+	
+}
